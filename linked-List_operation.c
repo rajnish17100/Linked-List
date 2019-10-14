@@ -27,11 +27,11 @@ struct node* getNewNode(){
 }
 //function to print the list
 void printLinkedList(){
-	temp=start;
-	if(temp==NULL){
-   	printf("Linked-List is empty...Please Press 1 to create Linked-List\n\n");
-    return;
-   }
+     temp=start;
+     if(temp==NULL){
+       printf("Linked-List is empty...Please Press 1 to create Linked-List\n\n");
+       return;
+     }
    
     printf("\n Data item in the linked list are :");
     
@@ -83,7 +83,7 @@ void insertNewElement(){
 		//now we reach at the last node now insert the new node and do the changes
 		temp->link=newnode;
 		break;   	
-    case 3:
+       case 3:
     	//checking whether list contain some element
     	if(start==NULL){
 	  		printf("List is Empty..Please press 1 to create a list\n");
@@ -173,33 +173,28 @@ do{
 	int ch;
 	printf("\nEnter your choice\nPress 1 to create new linked-list\nPress 2 for inserting the new element at the appropriate position\nPress 3 to delete a node\nPress 4 to print the list\n");
 	scanf("%d",&ch);
-	
+
 	switch(ch){
-	
+
 		case 1:
 		  createLinkedList();
 		  break;
-		
+
 		case 2:
 		  insertNewElement();
 		  break;
-		
+
 		case 3:
 		  deleteElement();
 		  break;
-		
+
 		case 4:
 		  printLinkedList();
 		  break;
-		
+
 		default:
 		  return 0;
    }
 }while(1);
-
-
-
-
-
 
 }
