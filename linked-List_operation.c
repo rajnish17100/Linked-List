@@ -14,6 +14,7 @@ struct node* start=NULL;
 struct node* temp=NULL;
 struct node* newnode=NULL;
 
+// Function to create a new node 
 struct node* getNewNode(){
 	int key;
 	struct node* newnode=NULL;
@@ -24,7 +25,7 @@ struct node* getNewNode(){
 	newnode->link=NULL;
 	return newnode;
 }
-
+//function to print the list
 void printLinkedList(){
 	temp=start;
 	if(temp==NULL){
@@ -40,7 +41,7 @@ void printLinkedList(){
     }
 }
 
-
+//function to link all the newly created nodes
 void createLinkedList(){
   int ch;	
   start=getNewNode();
